@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>Starship game</title>
+	<meta name="author" content="JC Routier" />
+	<meta name="keywords" content="animation" />
+
+
+	<link rel="stylesheet" type="text/css" href="style/style-projet2018.css" title="starship style" />
+
+
+</head>
+
+<body>
+
+	<canvas id="stars" width="1000" height="400">
+	</canvas>
+
+	<div id="control">
+		<button id="nouvelleSoucoupe">1
+			<img src="images/flyingSaucer-petit.png" width="48" alt="nouvelle soucoupe volante" />
+		</button>
+		<button id="flotteSoucoupes">&#8734;
+			<img src="images/flyingSaucer-petit.png" width="48" alt="nouvelle soucoupe volante" />
+		</button>
+		<span class="txt">score :</span>
+		<span id="score"> 0 </span>
+		<p class="txt" id="mScore">Meilleur Score:&nbsp</p>
+		<button id="reset" class="txt2">
+			Mise &agrave; z&eacute;ro du meilleur score
+		</button>
+		<button id="stop" class="txt2">
+			Arr&ecirc;ter le jeu
+		</button>
+	</div>
+
+	<div id="GameOver">
+		<div id="GameOverText">
+			<h1 id="Txt">Soucoupes restants:
+				<span id="restants">3</span>
+			</h1>
+			<h3>Nom:&nbsp;</h3>
+			<input type="text" id="saveScore">
+			<br>
+			<div id="Replay" class="button" onclick="replay()">Play Again</div>
+			<div id="Save" class="button" onclick="save()">Enregistrer score</div>
+		</div>
+	</div>
+
+	<div id="Pass">
+		<div id="PassText">
+			<h3>Saisir le mot de passe:</h3>
+			<input type="password" id="password">
+			<br>
+			<div id="permission" class="button" onclick="pass()">Enregistrer</div><br>
+			<span id = "warning"></span>
+		</div>
+	</div>
+
+	<script src="scripts/projet2018.js"></script>
+</body>
+
+</html>

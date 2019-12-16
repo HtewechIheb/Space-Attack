@@ -1,0 +1,136 @@
+html {
+  background-color : rgba(0,0,0,0.5);
+}
+#stars {    
+    display : block;
+    margin : auto;
+    background-image: url("../images/ciel-nocturne.png");
+    background-repeat: repeat-x;
+    background-size: cover;
+    background-position : 0px 0px;
+    border : 2px solid white;
+    
+}
+
+  #stars {
+    animation-duration: 30s;
+    animation-name: starsSlide;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  @keyframes starsSlide {
+    from {
+      background-position : 1200px 0px;
+    }
+    
+    to {
+     background-position : 0px 0px;     
+    }
+  }
+
+div#control {
+  text-align : center;
+  margin : 10px;
+}
+
+button {
+  font-size : 40px; 
+}
+
+span#score{
+  display : inline-block;
+  width : 100px;
+  font-size : 30px;
+  text-align : right;
+  background-color : white;
+  padding : 4px;
+  margin : 4px;
+}
+
+#GameOver {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: none;
+}
+
+#GameOverText {
+  width: 520px;
+  height: 250px;
+  padding: 20px;
+  background-color: #FFDDB6;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 180px;
+  left: 420px;
+}
+
+.button {
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  text-align: center;
+  cursor: hand;
+  cursor: pointer;
+  font-size: 14pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #E8B861;
+  color: white;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.button:hover{
+  background-color: #FFBC1E;
+}
+
+#restants, #warning{
+  color: rgba(255, 0, 0, 0.9);
+}
+
+h3{
+  display: inline-block;
+}
+
+.txt{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 50;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.txt2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 10pt;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#Pass {
+  position: absolute;
+  width: 600px;
+  height: 400px;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7); 
+  display: none;
+}
+
+#PassText {
+  width: 520px;
+  height: 250px;
+  padding: 20px;
+  background-color: #FFDDB6;
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 180px;
+  left: 420px;
+}
