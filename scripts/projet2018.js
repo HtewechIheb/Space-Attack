@@ -1,13 +1,3 @@
-/***********************************************/
-/**                                            */
-/**              MINI-PROJET JS 2018           */
-/**                                            */
-/***********************************************/
-
-/** placez ici votre code javascript réponse aux questions du sujet de projet */
-
-/** n'oubliez pas de faire précéder le code de vos fonctions 
-    d'un commentaire documentant la fonction                   **/
 var stars = document.getElementById("stars");
 var ctx = stars.getContext("2d");
 var score = 0;
@@ -46,7 +36,7 @@ function sound(src) {
     }
 }
 
-var backgroundMusic = new sound("sons/Skyward.mp3");
+var backgroundMusic = new sound("sons/Skyward.mp3"); // DUE TO BROWSER POLICY CHANGES, AUTOPLAY IS CURRENTLY DISABLED //
 backgroundMusic.play();
 
 window.addEventListener("resize", function () {
