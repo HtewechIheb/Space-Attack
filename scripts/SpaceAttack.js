@@ -24,7 +24,6 @@ function sound(src) {
     this.sound.src = src;
     this.sound.setAttribute("preload", "auto");
     this.sound.setAttribute("controls", "none");
-    this.sound.setAttribute("loop", "yes");
     this.sound.setAttribute("type", "audio/mp3");
     this.sound.style.display = "none";
     document.body.appendChild(this.sound);
@@ -37,6 +36,7 @@ function sound(src) {
 }
 
 var backgroundMusic = new sound("sons/Skyward.mp3"); // DUE TO BROWSER POLICY CHANGES, AUTOPLAY IS CURRENTLY DISABLED //
+backgroundMusic.sound.setAttribute("loop", "yes");
 backgroundMusic.play();
 
 window.addEventListener("resize", function () {
