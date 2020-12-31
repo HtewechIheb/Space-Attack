@@ -1,2 +1,3 @@
 # Space-Attack
-A HTML, CSS and Javascript Space Invaders like video game.
+A Space Invaders inspired video game.
+Technologies used: HTML, CSS and JavaScript 
